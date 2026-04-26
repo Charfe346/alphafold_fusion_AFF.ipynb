@@ -85,7 +85,7 @@ alphafold_fusion/
 app.py                        # Streamlit entry point
 ## Companion: Web Application
 
-🌐 **Live:** [https://alphafold-fusion.vercel.app](https://alphafold-fusion.vercel.app)
+🌐 **Live:** [https://alphafold-fusion-6demeeil3-charfe346s-projects.vercel.app/]
 
 📦 **Code:** [github.com/Charfe346/alphafold-fusion-AFF-](https://github.com/Charfe346/alphafold-fusion-AFF-)
 
