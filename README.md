@@ -2,7 +2,7 @@
 
 **ColabFold-centred prediction, artefact harvesting, and integrated structural analysis**
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Charfe346/alphafold-fusion-colab/blob/main/AlphaFold_Fusion_Colab.ipynb)
+[![Open In Colab](https://colab.research.google.com/drive/1KMWIkIVkcmFlVHsHkTcjYT2UHwEEh_dK)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 ## Publication
