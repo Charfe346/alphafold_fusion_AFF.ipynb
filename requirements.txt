@@ -1,0 +1,24 @@
+# Core application dependencies for AlphaFold Fusion (Streamlit UI, viewer,
+# domain/conservation/disorder analysis, DisProt validation, report export).
+# Versions pinned to match the environment this app was built and tested in.
+#
+# NOTE: this file intentionally does NOT include JAX or ColabFold. Running
+# NEW structure predictions needs a GPU-specific install (see the
+# "Structure prediction engine (GPU only)" section of README.md). Without
+# it, the app still runs fully in analysis/viewing mode: browsing existing
+# results, the 3D viewer, domain/conservation/disorder analysis, and DisProt
+# validation all work with just the packages below.
+
+protobuf==4.25.5
+numpy==1.26.4
+importlib-metadata==6.11.0
+packaging==23.2
+streamlit==1.28.0
+plotly==5.17.0
+py3Dmol==2.1.0
+biopython>=1.83,<2
+Pillow==10.1.0
+psutil==5.9.8
+gemmi==0.6.6
+pandas>=2,<3
+tenacity==8.5.0
