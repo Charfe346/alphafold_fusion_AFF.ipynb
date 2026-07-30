@@ -4,6 +4,7 @@
 ![Python](https://img.shields.io/badge/python-3.10%2B-blue)
 ![Streamlit](https://img.shields.io/badge/UI-Streamlit-FF4B4B)
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR-USERNAME/YOUR-REPO/blob/main/alphafold_fusion_AFF3.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Charfe346/alphafold_fusion_AFF/blob/main/alphafold_fusion_AFF.ipynb)
 
 > ⚠️ Replace `YOUR-USERNAME/YOUR-REPO` above (and in `CITATION.cff`) with your
 > actual GitHub path once this repo is pushed, so the Colab badge resolves.
