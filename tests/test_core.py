@@ -1,3 +1,4 @@
+%%writefile tests/test_core.py
 """Unit tests for AlphaFold Fusion core functions.
 
 Run with:  pytest tests/ -v
@@ -188,3 +189,17 @@ def test_is_amino_acid():
 
 if __name__ == "__main__":
     pytest.main([__file__, "-v"])
+def test_extract_model_id():
+    from alphafold_fusion.runner import _extract_model_id
+    from pathlib import Path
+    assert _extract_model_id(Path("result_model_1_pred_0.pdb")) == "model_1"
+    assert _extract_model_id(Path("unrelaxed_model_3_multimer.pdb")) == "model_3"
+
+
+def test_kabsch_superpose():
+    from alphafold_fusion.ensemble_variance import kabsch_superpose
+    import numpy as np
+    target = np.array([[0.0, 0.0, 0.0], [1.0, 0.0, 0.0], [0.0, 1.0, 0.0]])
+    mobile = target + np.array([2.0, 3.0, 4.0])
+    aligned = kabsch_superpose(mobile, target)
+    assert np.allclose(aligned, target, atol=1e-4)
