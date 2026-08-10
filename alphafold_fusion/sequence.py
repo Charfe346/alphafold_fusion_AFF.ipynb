@@ -6,9 +6,15 @@ from pathlib import Path
 from typing import Optional
 
 
-def clean_sequence(seq: str) -> str:
-    seq = re.sub(r"[^ACDEFGHIKLMNPQRSTVWY:]", "", (seq or "").upper())
-    return re.sub(r":+", ":", seq).strip(":")
+def clean_sequence(seq: str) -> tuple[str, list[str]]:
+    raw = (seq or "").upper()
+    warnings = []
+    non_std = set(re.findall(r"[XUBZ]", raw))
+    if non_std:
+        warnings.append(f"Non-standard amino acids removed: {', '.join(sorted(non_std))}")
+    cleaned = re.sub(r"[^ACDEFGHIKLMNPQRSTVWY:]", "", raw)
+    cleaned = re.sub(r":+", ":", cleaned).strip(":")
+    return cleaned, warnings
 
 
 def is_complex(seq: str) -> bool:
