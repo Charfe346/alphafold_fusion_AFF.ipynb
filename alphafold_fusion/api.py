@@ -100,7 +100,7 @@ def uniprot_domains(j: Optional[dict]) -> list[dict]:
 
 
 # ══════════════════════════════════════════════════════════════
-# InterPro — COPIÉ DU CODE FONCTIONNEL (all-in-one)
+# # InterPro — Multi-endpoint fallback client
 # ══════════════════════════════════════════════════════════════
 @st.cache_data(show_spinner=False, ttl=86400)
 def fetch_interpro(acc: str, timeout: int = 20,
