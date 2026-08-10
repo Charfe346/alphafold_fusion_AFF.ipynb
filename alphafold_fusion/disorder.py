@@ -8,8 +8,7 @@ low pLDDT predicts intrinsic disorder was established by Akdel et al.
 pLDDT-based disorder prediction against IUPred2 using AUC-ROC.
 
 In this tool, pLDDT < 50 is used as a disorder threshold and
-validated independently against the DisProt database (Piovesan
-et al. 2022, Nucleic Acids Res 50:D471-D477) using AUC-ROC and MCC.
+validated independently against the DisProt database (Quaglia et al. 2022, Nucleic Acids Res 50(D1):D480-D487) using AUC-ROC and MCC.
 
 The minimum IDR length of 5 residues is a heuristic short-region
 filter (not defined by any specific reference).
